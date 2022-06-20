@@ -5,4 +5,4 @@ addons:
 before_script:
   - sleep 10
 script:
-  - mysql -e 'SHOW GLOBAL STATUS LIKE '%Connection_errors%'; '
+  - sudo mysql -e 'SHOW GLOBAL STATUS LIKE '%Connection_errors%'; '
