@@ -1,8 +1,9 @@
-dist: jammy
+dist: xenial
 group: dev
-addons:
-  mariadb: '10.9'
-before_script:
-  - sleep 10
+language: java
+jdk:
+  - openjdk8.3.31
 script:
-  - sudo mysql -e 'SHOW GLOBAL STATUS;'
+  - java -version
+  - javac Hello.java
+  - java Hello
