@@ -1,8 +1,8 @@
 dist: xenial
-group: dev
+group: edge
 language: java
 jdk:
-  - openjdk8.3.31
+- open jdk8u331
 script:
   - java -version
   - javac Hello.java
